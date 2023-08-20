@@ -1,8 +1,11 @@
+import { Router } from "./components";
+
 const App = () => {
   return (
-    <div>Initial Commit</div>
-  )
-}
+    <div className="w-full bg-white min-h-screen">
+      <Router />
+    </div>
+  );
+};
 
-export default App
-
+export default App;
