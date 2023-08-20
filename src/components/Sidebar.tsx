@@ -13,7 +13,7 @@ const SideBar = ({
     <div
       className={`${
         toggle ? "translate-x-[0px]" : "translate-x-[-271px]"
-      } absolute left-0 top-0 bg-[#373D43] h-screen w-[270px] transition-transform duration-300 flex flex-col py-4 px-4`}
+      } absolute z-10 left-0 top-0 bg-[#373D43] h-screen w-[270px] transition-transform duration-300 flex flex-col py-4 px-4`}
     >
       <form
         className="flex items-center bg-[#262A2E] h-[40px] rounded-full px-4"
