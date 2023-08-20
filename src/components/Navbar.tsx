@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container } from ".";
+import { Container, Sidebar } from ".";
 import { logo } from "../assets";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -76,6 +76,7 @@ const Navbar = () => {
           </div>
         </div>
       </Container>
+      <Sidebar toggle={toggle} text={text} setText={setText} />
     </nav>
   );
 };
