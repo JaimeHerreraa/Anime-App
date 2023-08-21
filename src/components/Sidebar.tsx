@@ -12,17 +12,17 @@ const SideBar = ({
   return (
     <div
       className={`${
-        toggle ? "translate-x-[0px]" : "translate-x-[-271px]"
+        toggle ? "translate-x-[0px]" : "translate-x-[-272px]"
       } absolute z-10 left-0 top-0 bg-[#373D43] h-screen w-[270px] transition-transform duration-300 flex flex-col py-4 px-4`}
     >
       <form
-        className="flex items-center bg-[#262A2E] h-[40px] rounded-full px-4"
+        className="flex px-4 items-center bg-[#262A2E] h-[40px] rounded-full"
         onSubmit={(event) => {
           event.preventDefault();
         }}
       >
         <input
-          className="border-none focus:outline-none bg-inherit placeholder:text-[18px]"
+          className="border-none w-[182px] focus:outline-none bg-inherit placeholder:text-[18px]"
           type="text"
           placeholder="Search..."
           name="text"

@@ -138,3 +138,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.list {
+  scroll-behavior: smooth;
+  scrollbar-width: 0.5vw;
+  scrollbar-color: #00baf0 #ccc;
+}
+
+.list::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #00baf0;
+}
+
+.list::-webkit-scrollbar-track {
+  background-color: #cccccc;
+}
