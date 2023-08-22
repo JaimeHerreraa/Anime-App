@@ -156,3 +156,27 @@ table {
 .list::-webkit-scrollbar-track {
   background-color: #cccccc;
 }
+
+.shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media screen and (min-width: 468px) {
+  .container {
+    width: 50%;
+    height: calc(100vw - 170px);
+    padding: 4px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    width: calc(100% - 320px);
+  }
+
+  .container {
+    width: 200px;
+  }
+}

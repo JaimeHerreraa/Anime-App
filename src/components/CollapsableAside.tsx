@@ -7,7 +7,7 @@ import { LinkTag } from ".";
 const CollapsableAside = ({ movies }: { movies: IAnime[] }) => {
   const [expand, setExpand] = useState(false);
   return (
-    <div className="bg-white w-full max-w-[722px] md:max-w-[300px] rounded">
+    <div className="bg-white w-full max-w-[722px] md:max-w-[300px] rounded h-fit">
       <div className="flex justify-start items-center h-[45px] px-3 border-solid border-b border-[#243C5A]/[.15] relative">
         <PlayArrowIcon style={{ color: "#FF7E00", fontSize: "30px" }} />
         <strong className="ms-4">TRENDING MOVIES</strong>

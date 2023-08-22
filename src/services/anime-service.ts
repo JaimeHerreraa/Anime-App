@@ -17,4 +17,18 @@ const getMovies = async (): Promise<IAnime[] | undefined> => {
   }
 };
 
-export { getMovies };
+const getAnimes = async (): Promise<IAnime[] | undefined> => {
+  try {
+    const request = await fetch(`${apiUrl}?type=tv`);
+    let response = await request.json();
+    if (response) {
+      const mappedData = convertToIAnimeArray(response.data);
+      return mappedData;
+    }
+    return [] as IAnime[];
+  } catch (error) {
+    console.error("Something Bad Happen: Couldn't retrieve data", error);
+  }
+};
+
+export { getMovies, getAnimes };
