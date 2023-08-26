@@ -5,24 +5,26 @@ const LinkTag = ({ type, title }: { type: string; title: string }) => {
   const [tagColor, setTagColor] = useState("#01BCF3");
   return (
     <a
-      className="flex justify-between items-center cursor-pointer text-[#3A4147] hover:text-[#80DDF9] transition-colors duration-300"
+      className="w-full flex justify-between items-center cursor-pointer hover:text-[#80DDF9]"
       href="/"
       onMouseOver={() => setTagColor("#80DDF9")}
       onMouseLeave={() => setTagColor("#01BCF3")}
     >
-      <div className="flex items-center">
+      <div className="flex items-center text-[14px] text-[#3A4147] w-[80%] mr-3 overflow-hidden">
         <PlayCircleFilledIcon
-          style={{
-            color: "inherit",
-            fontSize: "20px",
-            marginRight: "8px",
+          sx={{
+            width: "18px",
+            height: "18px",
+            color: "#E0E1E2",
+            marginRight: "6px",
           }}
         />
-        <span className="truncate w-[240px] md:w-[190px]">{title}</span>
+        <span className="float-left truncate">{title}</span>
       </div>
+
       <div
         style={{ backgroundColor: `${tagColor}` }}
-        className="transition-colors duration-300 w-[65px] md:w-[50px] h-[20px] text-white font-bold flex justify-center items-center rounded-full text-[12px] md:text-[10px]"
+        className="w-[20%] max-w-[60px] h-[20px] rounded-full flex justify-center items-center text-white font-bold uppercase text-[11px] shrink-0"
       >
         {type}
       </div>

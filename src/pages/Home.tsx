@@ -33,7 +33,7 @@ const Home = () => {
             <Spinner />
           </div>
         ) : (
-          <div className="w-full flex flex-wrap">
+          <div className="w-full grid grid-cols-12">
             <CollapsableAside movies={movies} />
             <Main animes={animes} />
           </div>

@@ -7,7 +7,7 @@ import { LinkTag } from ".";
 const CollapsableAside = ({ movies }: { movies: IAnime[] }) => {
   const [expand, setExpand] = useState(false);
   return (
-    <div className="bg-white w-full max-w-[722px] md:max-w-[300px] rounded h-fit">
+    <div className="bg-white w-full max-w-[722px] rounded h-fit col-start-1 col-end-13 md:col-start-1 md:col-end-5 lg:col-end-4">
       <div className="flex justify-start items-center h-[45px] px-3 border-solid border-b border-[#243C5A]/[.15] relative">
         <PlayArrowIcon style={{ color: "#FF7E00", fontSize: "30px" }} />
         <strong className="ms-4">TRENDING MOVIES</strong>
@@ -29,7 +29,7 @@ const CollapsableAside = ({ movies }: { movies: IAnime[] }) => {
         <ul className="list-none flex flex-col w-full">
           {movies.map((movie) => {
             return (
-              <li key={movie.id} className="h-[40px]  px-[10px] p-4 ">
+              <li key={movie.id} className="h-[40px]  px-[10px] p-4 w-full">
                 <LinkTag title={movie.title} type={movie.type} />
               </li>
             );
